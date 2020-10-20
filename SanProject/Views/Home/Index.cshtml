@@ -1,0 +1,313 @@
+﻿
+@{
+    Layout = null;
+
+}
+@using SanProject.Models;
+@model SanProject.Models.mdlUser
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="tr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Blurb is Price Comparison, Product Review and Affiliate, Social Business, Multi vendor Store,  HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <!-- =========================
+        Loding All Stylesheet
+    ============================== -->
+    <link rel="stylesheet" href="~/Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="~/Content/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Content/css/animate.min.css">
+
+    <link rel="stylesheet" href="~/Content/css/megamenu.css">
+
+    <!-- =========================
+        Loding Main Theme Style
+    ============================== -->
+    <link rel="stylesheet" href="~/Content/css/style.css">
+
+    <!-- =========================
+        Header Loding JS Script
+    ============================== -->
+    <script src="~/Content/js/modernizr.js"></script>
+</head>
+<body class="">
+
+
+    <section id="wd-header" class="dark-header">
+        <div class="container-fluid custom-width">
+            <div class="row">
+
+                <div class="col-md-6 col-lg-9"></div>
+                <div class="col-md-6 col-lg-3  col-xl-3 text-right" id="userpro">
+                    <button class="btn btn-primary my-account d-none d-lg-block" data-toggle="modal" data-target=".bd-example-modal-lg2">
+                        <i class="fa fa-user" aria-hidden="true"></i> My Account
+
+
+
+
+                    </button>
+
+                    <div class="modal fade bd-example-modal-lg2" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="container">
+                                    <div class="row text-left">
+                                        <div class="col-md-12 p0">
+
+                                            <div class="modal-tab-section wd-modal-tabs">
+                                                <ul class="nav nav-tabs wd-modal-tab-menu text-center" id="myTab" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-expanded="true">Giriş</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" id="sign-up-tab" data-toggle="tab" href="#sign-up" role="tab" aria-controls="sign-up">Kayıt</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-content" id="myTabContent">
+                                                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+
+                                                        <div class="row">
+                                                            <div class="col-md-6 p0 brand-description-area">
+                                                                <img src="~/Content/img/login-img-1.jpg" class="img-fluid" alt="">
+                                                            </div>
+                                                            <div class="col-md-12 col-lg-6 p0">
+                                                                <div class="login-section text-center">
+
+                                                                    <div class="login-form text-left">
+                                                                        <form>
+                                                                            <div class="form-group">
+                                                                                <label for="exampleInputEmaillogin">Email</label>
+                                                                                <input type="text" class="form-control" id="Mail" name="Mail" placeholder="E-mail">
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="exampleInputPasswordlogin">Şifre</label>
+                                                                                <input type="password" class="form-control" id="Sifre" name="Sifre" placeholder="***">
+                                                                            </div>
+                                                                            <button type="submit" class="btn btn-primary wd-login-btn" id="Giris" name="Giris">Giriş</button>
+
+
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="tab-pane fade" id="sign-up" role="tabpanel" aria-labelledby="sign-up-tab">
+
+                                                        <div class="row">
+                                                            <div class="col-md-6 p0 brand-login-section">
+                                                                <img src="~/Content/img/login-img-2.jpg" class="img-fluid" alt="">
+
+                                                            </div>
+                                                            <div class="col-md-6 p0">
+                                                                <div class="sign-up-section text-center">
+                                                                    <div class="login-form text-left">
+                                                                        <form>
+                                                                            <div class="form-group">
+                                                                                <label for="exampleInputname-sign-up">Ad Soyad</label>
+                                                                                <input type="text" class="form-control" id="AdSoyad" name="AdSoyad" placeholder="Ad Soyad">
+                                                                            </div>
+
+                                                                            <div class="form-group">
+                                                                                <label for="exampleInputEmailsign-up">Email</label>
+                                                                                <input type="text" class="form-control" id="Email" name="Email" placeholder="Email">
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="exampleInputname2-sign-up">Telefon</label>
+                                                                                <input type="text" class="form-control" id="Phone" name="Phone" placeholder="Telefon">
+                                                                            </div>
+                                                                            <div class="form-group">
+                                                                                <label for="exampleInputPasswordsign-up">Password</label>
+                                                                                <input type="password" class="form-control" id="Password" name="Password" placeholder="*** *** ***">
+                                                                            </div>
+                                                                            <button type="submit" class="btn btn-primary wd-login-btn" id="Kayit">Kayıt if</button>
+
+
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="coupon-area">
+        <div class="container-fluid custom-width">
+            <div class="row">
+
+                <div class="col-lg-9" id="result">
+                    <!--Single coupon-->
+                    @*<div class="sin-coupon row no-gutters">
+
+                            <div class="col-sm-9 col-lg-6 col-xl-7">
+                                <div class="coupon-content">
+
+                                    <span class="ratestar" style="display:none"></span>
+                                    <div class="sav-coupon-wrap">
+                                        <a class="sav-coupon" href="#" data-toggle="tooltip" data-placement="top" title="Save Coupon">
+                                            4.0  <i class="fa fa-star-o" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                    <h2></h2>
+
+                                    <p>IMPRESSIVE SOUND QUALITY IS THE ULTIOAL & assive the  noise isolating, NOT active noise the world it cancellation(ANC).</p>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-lg-6 col-xl-5">
+                                <div class="coupon-code">
+
+                                    <div class="rate">
+                                        <input type="radio" id="star5" name="rate" value="5" />
+                                        <label for="star5" title="text">5 yıldız</label>
+                                        <input type="radio" id="star4" name="rate" value="4" />
+                                        <label for="star4" title="text">4 yıldız</label>
+                                        <input type="radio" id="star3" name="rate" value="3" />
+                                        <label for="star3" title="text">3 yıldız</label>
+                                        <input type="radio" id="star2" name="rate" value="2" />
+                                        <label for="star2" title="text">2 yıldız</label>
+                                        <input type="radio" id="star1" name="rate" value="1" />
+                                        <label for="star1" title="text">1 yıldız</label>
+                                    </div>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" style="margin-top: 0px; margin-bottom: 10px;margin-left:20px; width: 80%;float:right"></textarea>
+
+                                    <button type="button" class="coupon-hcode" data-toggle="modal" data-target=".bd-example-modal-lg-product-1">
+                                        <span class="hcode">Değerlendir</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>*@
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--Coupon popup -->
+    <!-- Modal -->
+    <div class="modal fade bd-example-modal-lg-product-1" id="exampleModalCenter" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="coupon-modal modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p>Scribble Education Store: Save Up To 50% + Free Shipping</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="coupon-modal-body">
+                    <p class="deal-activity">DEAL ACTIVATED, NO COUPON CODE REQUIRED!</p>
+                    <div class="coupon-show">
+                        <p>msejdwsdisdfllkfosk</p>
+                        <a href="#">http://www.themeim.com/demo/blurb/</a>
+                    </div>
+                    <div class="coupon-feedback">
+                        <div class="smile-wrapper">
+                            <ul class="smile">
+                                <li><a href="#"><i class="fa fa-smile-o"></i></a></li>
+                                <li><a href="#"><i class="fa fa-smile-o"></i></a></li>
+                                <li><a href="#"><i class="fa fa-star-o"></i></a></li>
+                            </ul>
+                            <p>Did it work</p>
+                        </div>
+                        <a href="" class="mod-store-btn">Go to Store</a>
+                    </div>
+                    <div class="coupon-accordion">
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h5 class="mb-0">
+                                        <button class="coupon-card-btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Coupon details</button>
+                                    </h5>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="card-body coupon-card-body">
+                                        <h6>Copon Details :</h6>
+                                        <p>Enter this code at chackout get 40% discount for all printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                                        <span>Expired  Date :  01 / 02 / 2018</span>
+                                        <span>Submitted :  A week ago</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="mf-left"> <i class="fa fa-signal" aria-hidden="true"></i>17548 People View This</div>
+                    <div class="mf-right">
+                        <ul class="coupon-soc">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/jquery-ui.js"></script>
+    <script src="~/Content/js/popper.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <script src="~/Content/js/jquery.counterup.min.js"></script>
+    <script src="~/Content/js/jquery.nav.js"></script>
+    <script src="~/Content/js/jquery.countdown.min.js"></script>
+    <script src="~/Content/js/jquery.rateyo.js"></script>
+    <script src="~/Content/js/jquery.scrollUp.min.js"></script>
+    <script src="~/Content/js/jquery.sticky.js"></script>
+    <script src="~/Content/js/mobile.js"></script>
+    <script src="~/Content/js/lightslider.min.js"></script>
+    <script src="~/Content/js/owl.carousel.min.js"></script>
+    <script src="~/Content/js/circle-progress.min.js"></script>
+    <script src="~/Content/js/waypoints.min.js"></script>
+    <!--- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
+    <script src="~/Content/js/simplePlayer.js"></script>
+    <script src="~/Content/js/vue.min.js"></script>
+    <script src="~/Content/js/main.js"></script>
+    <script src="~/Content/js/San.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script>
+        SitePath = '@CacheObject.GetApplicationPath()';
+    </script>
+    <script>
+        $(function () {
+            Search.init();
+        })
+    </script>
+
+</body>
+</html>
+
